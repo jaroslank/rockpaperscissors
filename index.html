@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2457491cb6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="title">
+        <h1 class="main-title">PEDRA PAPEL TESOURA</h1>
+        <div class="subtitle">
+            <p class="main-sub">By <a href="https://instagram.com/jaroslank" target="_blank" class="sub-link">@jaroslank</a><i class="fa-brands fa-instagram"></i></p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="scoreboard">
+            <h2 class="score-message" id="scoreMessage">Faça uma escolha:</h2>
+            <p class="score-explain" id="scoreExplain">O primeiro a fazer 5 pontos vence</p>
+
+            <div class="score-container">
+                <div class="profile">
+                
+                    <div class="sign" id="playerSign">👽</div>
+                    <p class="score" id="playerScoreP">Você: 0</p>
+                </div>
+                <div class="profile">
+                    <div class="sign" id="computerSign">👽</div>
+                    <p class="score" id="computerScoreP">Computador: 0</p>
+                </div>
+            </div>
+        </div>
+        <div class="joystick">
+
+            <button class="botao square-btn" id="pedra">
+                <div class="sign">
+                    👊
+                </div>
+            </button>
+
+            <button class="botao square-btn" id="papel">
+                <div class="sign">
+                    ✋
+                </div>
+            </button>
+
+            <button class="botao square-btn" id="tesoura">
+                <div class="sign">
+                    ✌
+                </div>
+            </button>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            jaroslank
+          </p>
+          <a href="https://github.com/jaroslank" target="_blank">
+            <i class="fa-brands fa-github fa-flip"></i>
+          </a>
+        </footer>
+
+        <div class="panel" id="endPanel">
+            <p class=panel-title id="endMessage"></p>
+            <button class="restartBtn" id="restartButton">
+                Jogar novamente!
+            </button>
+        </div>
+        <div class="overlay" id="overlay"></div>
+
+        <script src="script.js"></script>
+</body>
+</html>
